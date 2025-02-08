@@ -4,6 +4,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import axios from 'axios';
 import { ClickAwayListener } from "@mui/material";
 import "../header/header.css"
+import Navigation from "./navigation/navigation";
 // MUI IMPORTS
 import Button from '@mui/material/Button';
 import PersonOutlineSharpIcon from '@mui/icons-material/PersonOutlineSharp';
@@ -74,7 +75,7 @@ const Header = () => {
   return (
     <>
       <div className="bg-gray-500 ">Header</div>
-      <header>
+      <header className="mb-4">
         <div className="header_container flex items-center justify-between gap-4 px-2">
           <div className="logo_container">
             <img src="./src/assets/images/logo.svg" alt="" />
@@ -140,7 +141,7 @@ const Header = () => {
                      </div>
                      
                     {isOpenAccDrop &&
-                     <ul className="Account_dropDown absolute top-8 right-0 w-[190px] h-auto shadow-xl border-gray-50 border-[0.6px   ">
+                     <ul className="Account_dropDown absolute top-8 right-0 w-[190px] h-auto shadow-xl border-gray-100 border-[0.6px z-100   ">
                       <li className="w-full py-1"><Button className="mui-button"><PersonOutlineSharpIcon className=""/>My Account</Button></li>
                       <li className="w-full py-1"><Button className="mui-button"> <LocationOnOutlinedIcon/>Tracking</Button></li>
                       <li className="w-full py-1"><Button className="mui-button"> <BeenhereOutlinedIcon/> My Voucher</Button></li>
@@ -160,6 +161,9 @@ const Header = () => {
           </div>
         </div>
       </header>
+        <hr className=" text-gray-300" />
+      <Navigation/>
+      <hr className=" text-gray-300" />
     </>
   );
 };

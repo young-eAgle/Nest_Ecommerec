@@ -1,13 +1,12 @@
 .mui-button{
     color: black;
-    margin-left:0px;
-    display: flex;
-    justify-content: start;
     gap: 8px;
-    width: 100%;
+    /* width: 100%; */
     padding: 7px;
+
 }
 
 .mui-button:hover{
     background-color: rgb(200, 198, 198);
+    color: black;
 }
