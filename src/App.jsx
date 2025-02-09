@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./components/header/header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
-
+import Listing from "./pages/Listing/Listing";
 import About from "./pages/About";
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route exact={true} path="/" element={<HomePage/>}/>
+          <Route exact={true} path="/listing" element={<Listing/>}/>
           <Route exact={true} path="/about" element={<About/>}/>
 
         </Routes>

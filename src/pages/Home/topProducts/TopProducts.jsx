@@ -11,7 +11,7 @@ const TopProducts = ({title}) => {
     </div>
 
 
-    <div className="items flex items-center gap-3 hover:scale-102 transition-all duration-125 cursor-pointer pt-5">
+    <div className="items flex items-center gap-3 hover:scale-102 transition-all duration-525 cursor-pointer pt-5">
 
         <div className="img rounded">
             <img className='rounded-sm w-38' src="./src/assets/top_products/top-1.jpg" alt="" />
@@ -39,7 +39,7 @@ const TopProducts = ({title}) => {
 
 
     </div>
-    <div className="items flex items-center gap-3  relative transition-all duration-785 ease-in-out cursor-pointer pt-5 overflow-hidden">
+    <div className="items flex items-center gap-3  relative transition-all duration-525 ease-in-out cursor-pointer pt-5 overflow-hidden">
 
         <div className="img rounded">
             <img className='rounded-sm w-38' src="./src/assets/top_products/top-3.jpg" alt="" />
@@ -67,7 +67,7 @@ const TopProducts = ({title}) => {
 
 
     </div>
-    <div className="items flex items-center gap-3 hover:scale-102 transition-all duration-125 cursor-pointer pt-5">
+    <div className="items flex items-center gap-3 hover:scale-102 transition-all duration-525 cursor-pointer pt-5">
 
         <div className="img rounded">
             <img className='rounded-sm w-38' src="./src/assets/top_products/top-2.jpg" alt="" />
